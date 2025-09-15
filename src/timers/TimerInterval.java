@@ -5,7 +5,7 @@ import java.util.TimerTask;
 import java.util.Date;
 
 public class TimerInterval {
-    public static void main(String[] args) {
+    public void start() {
         Timer timer = new Timer();
 
         TimerTask task = new TimerTask() {
@@ -20,4 +20,3 @@ public class TimerInterval {
         System.out.println("TimerInterval pornit...");
     }
 }
-
