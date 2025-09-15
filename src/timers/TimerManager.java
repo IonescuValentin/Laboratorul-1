@@ -1,0 +1,1 @@
+public class TimerManager { private TimerInterval t1=new TimerInterval(); private TimerAtTime t2=new TimerAtTime(); private TimerWithPeriod t3=new TimerWithPeriod(); public void startAll(){ t1.start(); t2.start(); t3.start(); } } 
