@@ -1,10 +1,12 @@
+package timers;
+
 import java.util.Timer;
 import java.util.TimerTask;
 import java.util.Date;
 import java.util.Calendar;
 
 public class TimerAtTime {
-    public static void main(String[] args) {
+    public void start() {
         Timer timer = new Timer();
 
         TimerTask task = new TimerTask() {
@@ -16,7 +18,7 @@ public class TimerAtTime {
         };
 
         Calendar calendar = Calendar.getInstance();
-        calendar.add(Calendar.SECOND, 10);
+        calendar.add(Calendar.SECOND, 10); // exemplu: 10 secunde de la acum
         Date specificTime = calendar.getTime();
 
         timer.schedule(task, specificTime);
